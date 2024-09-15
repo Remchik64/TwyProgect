@@ -39,7 +39,7 @@ if st.button("Обновить данные"):
 if st.button("Выйти"):
     st.session_state.authenticated = False
     st.session_state.username = None
-    switch_page("home")
+    switch_page("registr")  # Измените на существующую страницу
 
 # Зона для перехода в чат
 if st.button("Перейти в чат"):
