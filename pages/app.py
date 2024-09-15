@@ -74,7 +74,6 @@ def submit_question():
     payload = {"question": user_input}
     output = query(payload)
     response_text = output.get('text', '')
-    display_response(response_text)
 
     # Сохраняем сообщения в историю
     history.add_user_message(user_input)
@@ -87,4 +86,5 @@ def submit_question():
     # Очищаем поле ввода
     st.session_state.user_input = ""
 
+# Обновляем вывод ответа только в истории сообщений
 st.text_input("Введите ваш вопрос", key="user_input", on_change=submit_question)
