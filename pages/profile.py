@@ -42,5 +42,3 @@ if st.button("Выйти"):
     switch_page("registr")  # Измените на существующую страницу
 
 # Зона для перехода в чат
-if st.button("Перейти в чат"):
-    switch_page("app")
