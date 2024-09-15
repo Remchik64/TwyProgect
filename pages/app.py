@@ -11,7 +11,7 @@ if "authenticated" not in st.session_state or not st.session_state.authenticated
 
 st.set_page_config(page_title="Чат-бот", layout="wide")
 
-API_URL = "https://flowise-renataraev64.amvera.io/api/v1/prediction/80c6baef-f33a-4c39-9516-1db9fb658b67"
+API_URL = "https://flowise-renataraev64.amvera.io/api/v1/prediction/4a4a3f5c-9ebf-4243-8d4f-b3b69dd57313"
 
 # Инициализируем базы данных
 chat_db = TinyDB('chat_history.json')
